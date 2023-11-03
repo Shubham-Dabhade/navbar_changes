@@ -1,0 +1,371 @@
+.Gallery{
+    height: 100%;
+    width: 100%;
+    padding: 40px 30px;
+    margin: 30px 0px}
+
+.inside-home-gallery-component{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.third-home-gallery-component1{
+    display: none;
+}
+
+/* first column */
+.first-home-gallery-component{
+    flex: 1;
+    height: 100%;
+}
+.inside-first-home-gallery-component{
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    border-radius: 30px;
+    position: relative;
+}
+.first-home-gallery-component-image-training{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity:0.60;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+}
+.inside-first-top-gallery-component{
+    cursor: pointer;
+    background: none;
+    position: absolute;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+.home-gallery-button{
+    background: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.home-gallery-description{
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.home-gallery-see-more-button{
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    border-radius: 30px;
+    background: white;
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    align-items: center;
+    transition: width 0.4s ease-in-out;
+}
+.home-gallery-see-more-button:hover{
+    width: 45%;
+}
+
+.home-gallery-arrow-icon{
+    position: absolute;
+    right: 10px;
+}
+
+
+.gallery-home-image-title{
+    position: absolute;
+    font-size: 30px;
+    background: none;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 600;
+    z-index: 2;
+    color: white;
+}
+
+/* second column */
+.second-home-gallery-component{
+    flex: 1;
+    height: 100%;
+}
+.inside-second-home-gallery-component{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    border-radius: 30px;
+    position: relative;
+    /* background:linear-gradient(to bottom, rgba(0, 0, 0, 0.847), rgba(0, 0, 0, 0.73));    */
+}
+.second-home-gallery-image-practice{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity:0.60;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+}
+
+
+/* third column */
+.third-home-gallery-component{
+    height: 100%;
+    flex: 1;   
+}
+.inside-third-home-gallery-component{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 5px;
+}
+.third-top-home-gallery-component{
+    height: 100%;
+    width: 100%;
+}
+.inside-third-top-home-gallery-component{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    border-radius: 30px;
+    position: relative;
+}
+.third-top-home-image-teams{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity:0.60;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+}
+
+.third-bottom-home-gallery-component{
+    height: 100%;
+    width: 100%;
+}
+.inside-third-bottom-home-gallery-component{
+    cursor: pointer;
+    height: 107%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    border-radius: 30px;
+    position: relative;
+}
+.third-bottom-home-image-champs{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity:0.60;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width:1120px) {
+    .home-gallery-button {
+        width: 40%;
+    }
+    .home-gallery-see-more-button {
+        width: 50%;
+    }
+    .home-gallery-see-more-button:hover {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .Gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .third-home-gallery-component{
+        display: none;
+    }
+
+    /* responsive thirdcolumn */
+    .third-home-gallery-component1{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .third-home-gallery-component1{
+        height: 100%;
+        width: 100%;
+        flex: 1;   
+    }
+    .inside-third-home-gallery-component1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+    }
+    .third-top-home-gallery-component1{
+        height: 100%;
+        width: 100%;
+    }
+    .inside-third-top-home-gallery-component1{
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        display: flex;
+        border-radius: 30px;
+        overflow: hidden;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;
+        border-radius: 30px;
+        position: relative;
+    }
+    .third-top-home-image-teams1{
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        opacity:0.60;
+        transition: transform 0.6s ease-in-out;
+        object-fit: cover;
+    }
+    
+    .third-bottom-home-gallery-component1{
+        height: 100%;
+        width: 100%;
+    }
+    .inside-third-bottom-home-gallery-component1{
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        display: flex;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        overflow: hidden;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;
+        border-radius: 30px;
+        position: relative;
+    }
+    .third-bottom-home-image-champs1{
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        opacity:0.60;
+        transition: transform 0.6s ease-in-out;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .Gallery{
+        padding: 40px 15px;
+    }
+    .inside-home-gallery-component {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .inside-home-gallery-component {
+        max-height: 100%;
+    }
+    .inside-second-home-gallery-component{
+        max-height: 100%;
+    }
+    .inside-third-home-gallery-component1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .inside-first-top-gallery-component {
+        padding: 100px 30px;
+    }
+    .home-gallery-description {
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .home-gallery-description {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .home-gallery-description {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .inside-first-top-gallery-component {
+        padding: 30px 30px;
+    }
+    .gallery-home-image-title {
+        font-size: 23px;
+    }
+    .home-gallery-button {
+        font-size: 14px;
+    }
+}

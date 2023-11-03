@@ -1,0 +1,134 @@
+.Navbar {
+  margin: 0;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  z-index: 999;
+  width: 100%;
+}
+.inside-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-element-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-element-left-button {
+  font-size: 18px;
+  padding: 13px;
+  width: 130px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.574);
+  border-radius: 30px;
+  cursor: pointer;
+}
+.navbar-element-left-button:hover {
+  color: #f0f0f0;
+  background: rgb(0, 0, 0);
+}
+
+.navbar-element-center {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-element-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.button-op {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 26px;
+  right: 30px;
+}
+
+.burger {
+    width:100%;
+    background: #000000;
+}
+.burger::after,
+.burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.burger::after {
+  top: -5px;
+}
+
+.burger::before {
+  top: 5px;
+}
+
+.burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+.burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+@media screen and (max-width:690px) {
+  .Navbar{
+      padding: 20px 15px;
+  }
+}
+
+@media  screen and (max-width:557px) {
+    .navbar-element-left{
+        visibility: hidden;
+    }
+}
+
+@media  screen and (max-width:407px) {
+    .navbar-element-left{
+        display: none;
+    }
+    .navbar-element-center{
+        flex: 11;
+    }
+    /* .navbar-element-left{
+        display: none;
+    } */
+}

@@ -1,0 +1,572 @@
+
+.inside-home-container{
+    width: 100%;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.inside-home-container-left{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+    opacity: 1;
+}
+
+.left-home-container-top-block{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.free-circle-1{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: none;
+    border-radius: 50%;
+    top: 100px;
+    left: -100px;
+    border: 1px solid rgba(255, 255, 255, 0.369);
+}
+.free-circle-2{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: none;
+    border-radius: 50%;
+    top: 100px;
+    right: -50px;
+    border: 1px solid rgba(255, 255, 255, 0.369);
+
+}
+
+.home-left-football-image-container{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    bottom: 140px;
+    right: 160px;
+    background: none;
+}
+.home-left-football-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #e0f465;
+}
+
+.left-home-top-block-title{
+    background: none;
+    color: #f0f0f0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.left-home-top-block-button{
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 16%;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 1;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    text-align: center;
+}
+.left-home-button-text{
+    font-size: 19px;
+    font-weight: 400;
+    position: absolute;
+    left: 13px;
+}
+
+.arrow-forward-icon{
+    position: absolute;
+    right: 10px;
+}
+.left-home-top-block-button:hover{
+    width: 60%;
+}
+
+.left-home-container-bottom-block{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1px;
+    width: 100%;
+    height: fit-content;
+}
+
+.left-home-bottom-image-container{
+    height: 100%;
+    width: 100%;
+}
+.footballer-bottom-image{
+    height: 100%;
+    width: 97%;
+    border-radius: 30px;
+}
+
+.left-home-container-bottom-block-right{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 100%;
+    padding: 30px;
+    position: relative;
+}
+.bottom-left-block-home-title{
+    font-size: 60px;
+    font-weight: 700;
+}
+.bottom-left-block-home-content{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bottom-left-home-button{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 70%;
+    transition: width 0.3s ease-in-out;
+    cursor: pointer;
+}
+.bottom-left-home-button:hover{
+    width: 75%;
+}
+.bottom-left-home-button-content{
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.inside-home-container-right{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.image-slider-arrow-left-container{
+    position: absolute;
+    z-index: 12;
+    height: 80px;
+    width: 80px;
+    background: none;
+    border-radius: 50%;
+    right: 25%;
+    top: 3%;
+    cursor: pointer;
+}
+.image-slider-arrow-left{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    background: none;
+    color: #f0f0f0;
+}
+
+.image-slider-arrow-right-container{
+    position: absolute;
+    z-index: 12;
+    height: 80px;
+    width: 80px;
+    background: none;
+    border-radius: 50%;
+    right: 10%;
+    top: 3%;
+    cursor: pointer;
+}
+.image-slider-arrow-right{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    background: none;
+    color: #f0f0f0;
+}
+
+.right-home-footballer-image-container{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+}
+.footballer-right-1{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 0.63;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+    /* transform: translateX(100%); */
+}
+
+.home-right-block-aboutus-snippet-container{
+    position: absolute;
+    bottom: 17%;
+    background: none;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.home-right-block-aboutus-button{
+    width: fit-content;
+    padding: 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.home-right-block-aboutus-content{
+    background: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footballer-bottom-image1 {
+    display: none;
+}
+
+
+@media screen and (min-width:1888px) {
+    .left-home-top-block-title {
+        font-size: 90px;
+    }
+    .home-left-football-image-container {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        bottom: 25%;
+        right: 25%;
+    }
+    .left-home-button-text {
+        font-size: 35px;
+        left: 20px;
+    }
+    .arrow-forward-icon{
+        position: absolute;
+        right: 20px;
+    }
+    .left-home-container-bottom-block-right-motion{
+        padding: 50px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 30px;
+        height: 100%;
+        position: relative;
+    }
+    .left-home-container-bottom-block-right {
+        padding: 0px;
+    }
+    .bottom-left-block-home-title {
+        font-size: 100px;
+    }
+    .bottom-left-block-home-content {
+        font-size: 50px;
+    }
+    .bottom-left-home-button {
+        height: 75px;
+    }
+    .bottom-left-home-button-content {
+        font-size: 35px;
+        left: 20px;
+    }
+
+    .image-slider-arrow-left-container {
+        height: 130px;
+        width: 130px;
+    }
+    .image-slider-arrow-right-container {
+        height: 130px;
+        width: 130px;
+    }
+    .home-right-block-aboutus-snippet-container {
+        bottom: 20%;
+        padding: 50px;
+    }
+    .home-right-block-aboutus-button {
+        padding: 15px;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .home-right-block-aboutus-content {
+        font-size: 50px;
+    }
+    .free-circle-1 {
+        height: 700px;
+        width: 700px;
+        top: 200px;
+    }
+    .free-circle-2 {
+        height: 500px;
+        width: 500px;
+        right: -15px;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    .home-left-football-image-container {
+        bottom: 24%;
+        right: 24%;
+    }
+    .left-home-top-block-button {
+        width: 65%;
+    }
+    .left-home-top-block-button:hover {
+        width: 70%;
+    }
+    .bottom-left-home-button {
+        width: 75%;
+    }
+    .bottom-left-home-button:hover {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .left-home-top-block-title {
+        font-size: 40px;
+    }
+    .bottom-left-block-home-title {
+        font-size: 50px;
+    }
+    .home-left-football-image-container {
+        height: 60px;
+        width: 60px;
+    }
+    .left-home-button-text {
+        font-size: 16px;
+    }
+    .bottom-left-home-button-content {
+        font-size: 16px;
+    }
+    .home-right-block-aboutus-content {
+        font-size: 20px;
+    }
+    .bottom-left-home-button {
+        height: 45px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .left-home-top-block-title {
+        font-size: 30px;
+    }
+    .home-left-football-image-container {
+        height: 40px;
+        width: 40px;
+        bottom: 30%;
+    }
+    .left-home-top-block-button {
+        width: 80%;
+        bottom: -10px;
+    }
+    .left-home-top-block-button:hover {
+        width: 85%;
+    }
+    .left-home-button-text {
+        font-size: 12px;
+    }
+    .bottom-left-block-home-title {
+        font-size: 30px;
+    }
+    .bottom-left-block-home-content {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .bottom-left-home-button-content {
+        font-size: 12px;
+    }
+    .bottom-left-home-button {
+        height: 45px;
+        left: 11px;
+        bottom: 12px;
+        width: 80%;
+    }
+    .bottom-left-home-button:hover{
+        width: 85%;
+    }
+
+
+    .image-slider-arrow-left-container {
+        height: 50px;
+        width: 50px;
+    }
+    .image-slider-arrow-right-container {
+        height: 50px;
+        width: 50px;
+    }
+    .home-right-block-aboutus-snippet-container {
+        bottom: 27%;
+    }
+    .home-right-block-aboutus-button {
+        font-size: 12px;
+    }
+    .home-right-block-aboutus-content {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .inside-home-container {
+        display: flex;
+        flex-direction: column;
+        height: 190vh;
+        padding: 0px 15px;
+    }
+
+    /* top block */
+    .inside-home-container-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1px;
+    }
+    .left-home-top-block-title {
+        font-size: 40px;
+    }
+    .left-home-container-top-block-motion{
+        height: 50%;
+    }
+    .left-home-container-top-block {
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 100%;
+    }
+    .left-home-container-bottom-block {
+        height: 50%;
+    }
+    .footballer-bottom-image {
+        display: none;
+    }
+    .footballer-bottom-image1 {
+        height: 100%;
+        width: 97%;
+        max-height: 50vh;
+        object-fit: cover;
+        border-radius: 30px;
+        display: block;
+    }
+
+    .left-home-top-block-button {
+        width: 45%;
+    }
+    .left-home-top-block-button:hover {
+        width: 50%;
+    }
+    .bottom-left-block-home-title {
+        font-size: 40px;
+    }
+    .bottom-left-block-home-content {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .footballer-right-1 {
+        object-fit: cover;
+    }
+    
+    
+
+    .inside-home-container-right {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .inside-home-container {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        padding: 0px 15px;
+    }
+    .bottom-left-block-home-title {
+        font-size: 30px;
+    }
+    .bottom-left-block-home-content {
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media screen and (max-width:426px) {
+    .left-home-top-block-button {
+        width: 70%;
+    }
+    .left-home-top-block-button:hover {
+        width: 75%;
+    }
+    .left-home-top-block-title {
+        font-size: 30px;
+    }
+    .home-left-football-image-container {
+        bottom: 20%;
+        right: 18%;
+    }        
+    .bottom-left-block-home-title {
+        font-size: 30px;
+    }
+    .bottom-left-block-home-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .image-slider-arrow-left-container {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+    .image-slider-arrow-right-container {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .home-right-block-aboutus-button {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    .home-right-block-aboutus-content {
+        font-size: 15px;
+    }
+    .home-right-block-aboutus-snippet-container {
+        bottom: 45%;
+    }
+    .inside-home-container {
+        height: 140vh;
+    }
+}
